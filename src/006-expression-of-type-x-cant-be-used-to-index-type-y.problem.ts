@@ -4,6 +4,6 @@ const productPrices = {
   Orange: 0.8,
 };
 
-const getPrice = (productName: string) => {
+const getPrice = (productName: keyof typeof productPrices) => { //makes the index signature dynamic as we update productPrices
   return productPrices[productName];
 };

@@ -1,4 +1,9 @@
-const routingConfig = {
+const routingConfig: {
+  routes: {
+    path: string;
+    component: string;
+  }[];
+} = {
   routes: [
     {
       path: "home",
@@ -6,7 +11,7 @@ const routingConfig = {
     },
     {
       path: "about",
-      component: 12,
+      component: "AboutComponent", // 12, Typing out routingConfig, let's ts point to the exact thing going wrong
     },
     {
       path: "contact",

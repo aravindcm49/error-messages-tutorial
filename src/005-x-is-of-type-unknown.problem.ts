@@ -7,5 +7,9 @@ const somethingDangerous = () => {
 try {
   somethingDangerous();
 } catch (error) {
-  console.log(error.message);
+  if(error instanceof Error) {
+    console.log(error.message); // Use TypeErrors for easier handling and understanding.
+  } else {
+    throw error
+  }
 }

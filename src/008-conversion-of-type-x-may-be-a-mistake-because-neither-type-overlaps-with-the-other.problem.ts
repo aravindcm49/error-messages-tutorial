@@ -1,5 +1,5 @@
 interface Dog {
-  bark: boolean;
+  bark?: boolean;
 }
 
 let cat = { purr: true };
